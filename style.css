@@ -1,0 +1,166 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #222;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #0f766e;
+  color: #fff;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+header h1 {
+  margin: 0 0 4px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  max-width: 700px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #0f766e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #115e59;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Status messages */
+#status {
+  margin: 12px 0 0;
+  padding: 0;
+  min-height: 1.5em;
+}
+
+.status-loading {
+  color: #555;
+  font-style: italic;
+}
+
+.status-success {
+  color: #166534;
+  background-color: #dcfce7;
+  border: 1px solid #86efac;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.status-error {
+  color: #991b1b;
+  background-color: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+/* Notes */
+#notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note-card {
+  border: 1px solid #ddd;
+  border-left: 6px solid #0f766e;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.note-card h3 {
+  margin: 0 0 6px;
+  overflow-wrap: anywhere;
+}
+
+.note-card p {
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+}
+
+.delete-btn {
+  background-color: #b91c1c;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.delete-btn:hover {
+  background-color: #7f1d1d;
+}
+
+.empty-message {
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .note-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
